@@ -1,0 +1,31 @@
+{
+  "about": ".NET Developer",
+  "experiences": [
+    {
+      "companyname": "Epsilon Net",
+      "location": "Thessaloniki, Greece",
+      "title": "Software Developer",
+      "datestart": "2021-07",
+      "dateend": "Present",
+      "description": "Developing, extending and maintaining .NET software designed for enterprise resource planning (ERP)"
+    },
+    {
+        "companyname": "Greek Army",
+        "location": "Lemnos, Greece",
+        "title": "IT Support Soldier",
+        "datestart": "2020-10",
+        "dateend": "2021-05",
+        "description": "Developing, extending and maintaining .NET software designed for enterprise resource planning (ERP)"
+    }
+  ],
+  "educations": [
+    {
+        "institution": "Aristotle University of Thessaloniki",
+        "location": "Thessaloniki, Greece",
+        "title": "Intergrated Master in Electrical and Computer Engineering",
+        "datestart": "2011-09",
+        "dateend": "2020-07",
+        "description": "Education covering electrical engineering, computer science and software engineering"
+    }
+  ]
+}
