@@ -1,0 +1,15 @@
+﻿@using Types;
+
+<div class = "education">
+    <h3>@data?.DateStart - @data?.DateEnd</h3>
+    <h3>@data?.Title</h3>
+    <h4>@data?.Institution</h4>
+    <div>
+        @data?.Description
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public EducationModel? data {get; set;}
+}
