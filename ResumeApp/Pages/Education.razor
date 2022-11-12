@@ -1,0 +1,31 @@
+﻿@using Types;
+
+<div class = "education">
+<button type="button" class="collapsible">
+<h3>@data?.Title .......... @data?.DateStart - @data?.DateEnd</h3>
+</button>
+
+<div class="accordion-collapse collapse" id="bb_19526601" style="">
+<div class="accordion-body">
+<div>Consistent with real life: consistent with real-life processes, logic, follow the user's habits of 
+language and concepts;</div><!--!-->
+<div>Consistent in the interface: All elements and structures need to be consistent, 
+such as design styles, icons and text, the location of elements, and so on.</div></div></div>
+    
+    
+    <h4>@data?.Institution</h4>
+    <div>
+        @data?.Description
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter]
+    public EducationModel? data {get; set;}
+
+    private void Collapse() {
+
+    }
+}

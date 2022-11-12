@@ -1,0 +1,37 @@
+﻿@page "/resume"
+@using Types
+@inject HttpClient Http
+
+<h3>Resume</h3>
+
+<h2> About @name</h2>
+<div>
+    @if (resume!=null) {
+        <h3>@resume?.About</h3>
+    }
+</div>
+<h2> Experience </h2>
+<div>
+    @if (resume != null && resume.Experiences != null)
+        @foreach(var exp in resume.Experiences) {
+            <Experience data=exp/>
+        }
+</div>
+<h2> Education </h2>
+<div>
+    @if (resume != null && resume.Educations != null)
+        @foreach(var edu in resume.Educations) {
+            <Education data=edu/>
+        }
+</div>
+
+@code {
+string name = "Alex";
+
+public ResumeModel? resume {get; set;}
+
+protected override async Task OnInitializedAsync()
+{
+    resume = await Http.GetFromJsonAsync<ResumeModel>("sample-data/resume.json");
+}
+}
